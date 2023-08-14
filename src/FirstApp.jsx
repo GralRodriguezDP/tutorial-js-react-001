@@ -1,4 +1,6 @@
 
+import PropTypes from 'prop-types';
+
 const getResult = () => {
     return 4 + 4;
 };
@@ -18,3 +20,8 @@ export const FirstApp = ( { title, subTitle } ) => {
         </>
     );
 };
+
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired,
+    subTitle: PropTypes.string.isRequired,
+}
